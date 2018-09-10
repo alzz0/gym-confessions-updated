@@ -50,6 +50,6 @@ app.use(commentRoutes);
 app.use(indexRoutes);
 app.use(postRoutes);
 
-app.listen(3001, function() {
-  console.log("Server started");
-});
+app.listen(process.env.PORT, process.env.IP, () =>
+  console.log(" Server Has Started!")
+);
